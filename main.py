@@ -8,3 +8,5 @@ def print_status(funkce):
 
 
 print("konec")
+
+print(".....")
