@@ -7,3 +7,6 @@ def print_status(funkce):
         print("Hotovo.")
 
 
+print("konec")
+
+print(".....")
