@@ -5,3 +5,6 @@ def print_status(funkce):
         print("Spouštím funkci...")
         vysledek = funkce(*args, **kwargs)
         print("Hotovo.")
+
+
+print("konec")
