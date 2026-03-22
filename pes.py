@@ -1,3 +1,10 @@
+from enum import Enum
+
+class PsiRasa(Enum):
+    RETRIEVER = "Retriever"
+    BULDOCEK = "Buldocek"
+    DALMATIN = "Dalmatin"
+
 class DatabazePsu:
     def __init__(self):
         self.psi = []
@@ -9,19 +16,23 @@ class DatabazePsu:
         return self.psi[-1]
 
 class Pes:
-    def __init__(self, jmeno, rasa, barva, vek):
+    def __init__(self,
+                 jmeno: str,
+                 rasa: PsiRasa,
+                 barva: str,
+                 vek: int):
         self.jmeno = jmeno
         self.rasa = rasa
         self.barva = barva
         self.vek = vek
-        self.cele_jmeno = self.jmeno + self.rasa
+        self.cele_jmeno = self.jmeno + str(self.rasa)
         self.id = 12312312
         self.srst = "kratkosrsty"
 
     def stekej(self):
-        if self.rasa == "Retriever":
+        if self.rasa == PsiRasa.RETRIEVER:
             print(f"hafhaf, Ja jsem {self.jmeno}")
-        elif self.rasa == "Buldocek":
+        elif self.rasa == PsiRasa.BULDOCEK:
             print(f"chrochro, Ja jsem {self.jmeno}")
         else:
             print(f"haf, tady {self.jmeno}")

@@ -35,9 +35,7 @@ book1 = Book(1)
 book2 = Book(2)
 book3 = Book(3)
 library = Library([book1, book2, book3])
-found_book = library.find_book(4)
-
 try:
     found_book = library.find_book(4)
-except BookNotFoundError:
+except BookNotFoundError as e:
     print("Book not found")

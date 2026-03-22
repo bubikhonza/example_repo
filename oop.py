@@ -1,8 +1,8 @@
-from pes import Pes
+from pes import Pes, PsiRasa
 from panicek import Panicek
 
-pes1 = Pes(jmeno = "Ales", rasa = "Buldocek", barva = "Cerna", vek=11)
-pes2 = Pes("Peny", "Retriever", "Zlata", 6)
+pes1 = Pes(jmeno = "Ales", rasa = PsiRasa.BULDOCEK, barva = "Cerna", vek=11)
+pes2 = Pes("Peny", PsiRasa.RETRIEVER, "Zlata", 6)
 pes3 = Pes("Carl", "Dalmatin", "Bila", 10)
 
 panicek1 = Panicek(jmeno="Honza", psi=[pes1, pes2])
