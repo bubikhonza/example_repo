@@ -1,0 +1,6 @@
+<h1>User app</h1>
+<h3>Users: </h3>
+{% for user in users %}
+    <b>jmeno: </b>{{user.username}}<br />
+    <b>email: </b>{{user.email}}
+{% endfor %}
