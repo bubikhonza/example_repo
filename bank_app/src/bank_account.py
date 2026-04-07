@@ -1,7 +1,6 @@
 from bank_app.src.currency_converter import CurrencyConverter
 from bank_app.src.enums import Currency
 
-
 class BankAccount:
     def __init__(self, owner: str, currency: Currency, currency_converter: CurrencyConverter) -> None:
         self.__owner = owner
