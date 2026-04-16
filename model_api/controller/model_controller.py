@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from model_api.entities.ModelInfoResponse import ModelInfoResponse
+from model_api.entities.model_info_response import ModelInfoResponse
 from model_api.entities.predict_request import PredictRequest
 from model_api.entities.predict_response import PredictResponse
 from model_api.enums import ModelType
